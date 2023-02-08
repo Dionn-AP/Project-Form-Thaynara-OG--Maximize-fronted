@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+![](https://i.imgur.com/xG74tOh.png)
+![](https://i.imgur.com/zk95BRR.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/askagi/Charge-Manager-front-end?color=%2304D361">
 
-## Available Scripts
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/askagi/Charge-Manager-front-end">
+  
+  <a href="https://github.com/askagi/Charge-Manager-front-end/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/askagi/Charge-Manager-front-end">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/askagi/Charge-Manager-front-end">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/askagi/Charge-Manager-front-end?style=social">
+  </a>
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+## 💻 Sobre o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎓 Desafio (Thaynara OG - Challenge), proposto pela empresa Maximize para concorrência à vaga de estágio (Frontend). Trata-se de um formulário para que qualquer pessoa possa enviar uma mesagem com proposta de contato à pessoa fictícia em questão (Thaynara OG). Após enviar sua mensagem o destintário recebe um email de confirmação e saudação. Também conta com um serviço de CMS/Manager, onde a "Thanara OG" poderá acessar o sistema e visualizar na sua caixa de entrada dentro da própria aplicação, as mensagem recebidas, bem como respondê-las. Abaixo segue algumas funcionalidades da aplicação: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Login de usuário (nessa etapa há apenas um usuário em questão, então trata-se de um login administrativo)
+- Usuário externo poderá enviar mensagens ao proprietário do site (pessoa fictícia em questão)
+- Visuaizar mensagens recebidas
+- Responder ao email recebido
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Layout
 
-### `npm run build`
+O layout da aplicação <a href="https://cubos.academy/"><img alt="Feito pela Rocketseat" src="https://img.shields.io/badge/feito%20pela-Cubos Academy-%23e5007b">O layout da aplicação <a href="https://cubos.academy/"><img alt="Feito pela Rocketseat" src="https://img.shields.io/badge/feito%20pela-Cubos Academy-%23e5007b">
+  </a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Algumas telas da aplicação
+    
+### Contato - web
+Aqui você pode enviar um email através do formulário à direita da página.
+    
+![](https://i.imgur.com/vq94v2x.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    
+#### Contato - mobile 
+![](https://i.imgur.com/tiaQrFQ.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### SignIn - web    
+Nessa tela somente o administrador poderá realizar login na aplicação.    
+![](https://i.imgur.com/JPPjlkj.png)
+    
+#### SignIn - mobie    
+![](https://i.imgur.com/2kY2taM.png)
+    
+#### Inbox - web
+Essa é a tela onde é possível ver a caixa de mensagens e abrir uma mesagem recebida para visualizar o conteudo completo e ou responder.    
+![](https://i.imgur.com/geeTVvU.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Inbox - mobile
+[caixa de entrada]
+    
+![](https://i.imgur.com/JBvIpDb.png) 
+    
+[Mensagem aberta]   
+![](https://i.imgur.com/LU00S4p.png)
+    
+[Respondendo mensagem]    
+![](https://i.imgur.com/D2OpBii.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    
+---
+## 🚀 Como executar o projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Clone este repositório
+$ git clone https://github.com/Dionn-AP/Project-Form-Thaynara-OG--Maximize-fronted.git
 
-## Learn More
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd Project-Form-Thaynara-OG--Maximize-fronted
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instale as dependências
+$ npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ou
 
-### Code Splitting
+$ yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Execute a aplicação
+$ npm start
 
-### Analyzing the Bundle Size
+ou
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+$ yarn start
 
-### Making a Progressive Web App
+```
+---
+## 🛠 Tecnologias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### Advanced Configuration
+#### **Website**  
+- **[React](https://reactjs.org/)**
+- **[React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)**
+- **[Axios](https://axios-http.com/ptbr/)**
+- **[React-Loading](https://www.npmjs.com/package/react-loading)**
+- **[TailwindCSS](https://tailwindcss.com/)**
+- **[clsx](https://www.npmjs.com/package/clsx)**    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> Veja o arquivo  [package.json](https://github.com/Dionn-AP/Project-Form-Thaynara-OG--Maximize-fronted/blob/main/package.json)
 
-### Deployment
+#### **Utilitários**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Protótipo:  **[Figma](https://www.figma.com/)**
+- API:  **[Backend da aplicação](https://contact-forms-qgj8.onrender.com)**
+- Deploy da Aplicação: **[Netlify](https://app.netlify.com/)**
+- Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+- Markdown:  **[HackMD](https://hackmd.io/)**
+---
+## 👨‍💻 Desenvolvedor
 
-### `npm run build` fails to minify
+👏 Esse que vos fala!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<table>
+  <tr>
+    <td align="center" style="padding: "><a href="https://portifolio-dionnatan.netlify.app/"><img style="border-radius: 50%;" src="https://github.com/Dionn-AP.png" width="100px;" alt=""/><br /><sub><b>Dionnatan Alves</b></sub></a><br />
+        <h4>Portifólio</h4>        
+      </td>
+    
+  </tr>
+</table>
