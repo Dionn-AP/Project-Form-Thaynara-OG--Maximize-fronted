@@ -1,21 +1,4 @@
-![](https://i.imgur.com/xG74tOh.png)
-![](https://i.imgur.com/zk95BRR.png)
-
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/askagi/Charge-Manager-front-end?color=%2304D361">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/askagi/Charge-Manager-front-end">
-  
-  <a href="https://github.com/askagi/Charge-Manager-front-end/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/askagi/Charge-Manager-front-end">
-  </a>
-    
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/askagi/Charge-Manager-front-end">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/askagi/Charge-Manager-front-end?style=social">
-  </a>
-</p>
-
+# Desafio Frontend - Thay OG
 
 ## 💻 Sobre o projeto
 
