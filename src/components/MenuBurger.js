@@ -28,17 +28,17 @@ export function MenuBurger() {
                 "translate-y-0 duration-300 ease-out": open
             })}>
                 <ul className="flex flex-col h-[65%] w-full items-center justify-between pb-2 font-bold">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Thay e Unicef</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">São João da Thay</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Novidades</a></li>
+                    <li><a href="/">Agenda</a></li>
+                    <li><a href="/">Thay e Unicef</a></li>
+                    <li><a href="/">Galeria</a></li>
+                    <li><a href="/">São João da Thay</a></li>
+                    <li><a href="/">Contato</a></li>
                 </ul>
                 <ul className="flex flex-col h-[30%] w-full items-center justify-end font-medium">
                     <li className="mb-2"><a href="#">Imprensa</a></li>
-                    <li><a href="#">Fã-Clubes</a></li>
+                    <li><a href="/">Fã-Clubes</a></li>
                     <Link to="/signin" className="font-semibold text-xl text-button_and_icons mt-8">Área restrita</Link>
                 </ul>
             </nav>

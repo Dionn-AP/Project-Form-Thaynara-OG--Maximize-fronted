@@ -29,10 +29,12 @@ export function ContainerPhoto() {
                     <img
                         src={ImageContactSolid}
                         className='z-10 absolute max-sm:bottom-[2%] max-sm:right-auto max-lg:right-0 max-xl:right-0 right-10 bottom-0 max-sm:h-[10rem] max-lg:h-[16rem] h-[20rem] w-auto'
+                        alt="imagem solida"
                     />
                     <img
                         src={ImageContactOutline}
                         className='z-30 absolute max-sm:bottom-[1%] max-sm:right-[8%] max-lg:right-0 max-xl:right-0 right-10 bottom-0 max-sm:h-[10rem] max-lg:h-[16rem] h-[20rem] w-auto'
+                        alt="imagem outline"
                     />
                 </div>
             </div>

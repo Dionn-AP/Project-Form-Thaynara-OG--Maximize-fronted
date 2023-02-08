@@ -28,6 +28,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
         }
 
         try {
+            // eslint-disable-next-line
             const response = await api.post('/sendmail', {
                 sender_name: inputName,
                 company: inputCompany,

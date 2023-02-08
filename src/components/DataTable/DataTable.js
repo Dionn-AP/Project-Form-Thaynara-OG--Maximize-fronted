@@ -35,6 +35,7 @@ export function DataTable({ openMessage, setOpenMessage }) {
 
     useEffect(() => {
         listAllMessages();
+        // eslint-disable-next-line
     }, []);
 
     return (

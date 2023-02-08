@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getItem, getHeaders, nameInitial } from '../utils/functions';
+import { getItem, getHeaders } from '../utils/functions';
 import clsx from 'clsx';
 import api from '../services/api';
 
 export function Header({ title }) {
     const navigate = useNavigate();
     const token = getItem('token');
+    // eslint-disable-next-line
     const [user, setUser] = useState([]);
     const [open, setOpen] = useState(false);
 
@@ -21,6 +22,7 @@ export function Header({ title }) {
     }
 
     useEffect(() => {
+        // eslint-disable-next-line
         getUser();
     }, [])
 

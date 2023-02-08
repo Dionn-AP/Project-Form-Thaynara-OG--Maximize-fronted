@@ -6,7 +6,7 @@ import IconSend from '../assets/icon-send.svg';
 import api from '../services/api';
 import clsx from 'clsx';
 
-export function Message({ openMessage, setOpenMessage, currentMessage, listAllMessages }) {
+export function Message({ setOpenMessage, currentMessage, listAllMessages }) {
     const token = getItem('token');
     const [loading, setLoading] = useState(false);
     const [replayMessage, setReplayMessage] = useState(false);
@@ -24,6 +24,7 @@ export function Message({ openMessage, setOpenMessage, currentMessage, listAllMe
             return
         }
         try {
+            // eslint-disable-next-line
             const response = await api.post('/replay', {
                 id_message: Number(currentMessage.id),
                 receiver_email: valueSenderMessage ? valueSenderMessage : currentMessage.email,

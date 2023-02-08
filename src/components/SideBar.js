@@ -23,17 +23,17 @@ export function SideBar({ openMenu, setOpenMenu }) {
             </div>
             <nav className="flex flex-col h-[16rem] w-full items-end justify-between font-poppins font-light text-sm">
                 <ul className="flex flex-col h-[75%] w-full items-end justify-between mb-2">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Agenda</a></li>
-                    <li><a href="#">Thay e Unicef</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">São João da Thay</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#=/">Sobre</a></li>
+                    <li><a href="/">Novidades</a></li>
+                    <li><a href="/">Agenda</a></li>
+                    <li><a href="/">Thay e Unicef</a></li>
+                    <li><a href="/">Galeria</a></li>
+                    <li><a href="/">São João da Thay</a></li>
+                    <li><a href="/">Contato</a></li>
                 </ul>
                 <ul className="flex flex-col h-[23%] w-full items-end justify-center">
-                    <li><a href="#">Imprensa</a></li>
-                    <li><a href="#">Fã-Clubes</a></li>
+                    <li><a href="/">Imprensa</a></li>
+                    <li><a href="/">Fã-Clubes</a></li>
                 </ul>
                 <Link
                     className='mt-1 font-extralight text-xs'
