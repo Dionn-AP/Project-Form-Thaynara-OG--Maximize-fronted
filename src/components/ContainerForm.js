@@ -59,7 +59,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                 !openMenu &&
                 <div
                     onClick={() => setOpenMenu(!openMenu)}
-                    className='max-lg:flex max-sm:hidden hidden absolute flex-col items-center z-20 justify-between max-lg:top-3 top-2 max-lg:right-0 max-md:-right-2 h-6 w-2 rounded-full'>
+                    className='max-lg:flex max-sm:hidden hidden absolute flex-col items-center z-20 justify-between max-lg:top-3 cursor-pointer top-2 max-lg:right-0 max-md:-right-2 h-6 w-2 rounded-full'>
                     <div className='h-[5px] w-[5px] rounded-full bg-button_and_icons'></div>
                     <div className='h-[5px] w-[5px] rounded-full bg-button_and_icons'></div>
                     <div className='h-[5px] w-[5px] rounded-full bg-button_and_icons'></div>

@@ -67,13 +67,13 @@ export function SignIn() {
                 <div className='flex flex-col items-center justify-start mt-10 '>
                     <div
                         style={{ backgroundImage: `url(${PhotoThay})` }}
-                        className='max-sm:w-[13rem] max-sm:h-[13rem] max-sm:z-auto z-10 max-[1540px]:h-[18rem] bg-no-repeat bg-cover bg-top h-[30rem] w-72 rounded-full border-2 shadow-xl shadow-button_and_icons/40 border-button_and_icons'>
+                        className='max-sm:w-[13rem] max-sm:h-[13rem] max-sm:z-auto z-10 max-[1940px]:h-[18rem] bg-no-repeat bg-cover bg-top h-[30rem] w-72 rounded-full border-2 shadow-xl shadow-button_and_icons/40 border-button_and_icons'>
                     </div>
                 </div>
                 <div className='flex flex-col w-full h-auto items-center'>
                     <form
                         onSubmit={Login}
-                        className='flex flex-col w-full max-sm:w-full max-[1540px]:w-[28rem] h-auto items-center justify-center max-[540px]:px-4 max-sm:px-14 px-8 mb-4 mt-8'>
+                        className='flex flex-col w-full max-sm:w-full max-[1940px]:w-[28rem] h-auto items-center justify-center max-[540px]:px-4 max-sm:px-14 px-8 mb-4 mt-8'>
                         <div className='flex flex-col w-full h-11 mb-4'>
                             <input
                                 type="text"

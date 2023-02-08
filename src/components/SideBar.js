@@ -44,7 +44,7 @@ export function SideBar({ openMenu, setOpenMenu }) {
                 openMenu &&
                 <span
                     onClick={() => setOpenMenu(false)}
-                    className='text-xs font-medium text-color_black_default mt-3'>Fechar</span>
+                    className='text-xs font-medium text-color_black_default mt-3 cursor-pointer'>Fechar</span>
             }
         </div>
     )

@@ -20,7 +20,7 @@ export function Contact() {
             openMenu={openMenu}
             setOpenMenu={setOpenMenu}
           />
-          <div className="max-md:w-full max-md:px-0 max-sm:h-auto flex flex-col max-md:mt-2 max-lg:mt-12 max-xl:mt-0 mt-24">
+          <div className="max-md:w-full max-md:px-0 max-sm:h-auto flex flex-col max-md:mt-2 max-lg:mt-12 max-xl:mt-0 mt-20">
             <ContainerForm
               openMenu={openMenu}
               setOpenMenu={setOpenMenu}

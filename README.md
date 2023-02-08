@@ -96,7 +96,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - Protótipo:  **[Figma](https://www.figma.com/)**
 - API:  **[Backend da aplicação](https://contact-forms-qgj8.onrender.com)**
-- Deploy da Aplicação: **[Netlify](https://app.netlify.com/)**
+- Deploy da Aplicação: **[Netlify](https://contact-thayog.netlify.app/)**
 - Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 - Markdown:  **[HackMD](https://hackmd.io/)**
 ---
