@@ -35,9 +35,9 @@ export function SignIn() {
                 email: inputEmail,
                 password: inputPassword
             });
-            const { token, dataUser } = response.data;
+            const { token, id } = response.data;
             setItem('token', token);
-            setItem('user', dataUser.id);
+            setItem('user', id);
             setError("")
 
             if (token) {
@@ -46,6 +46,7 @@ export function SignIn() {
             }
 
         } catch (error) {
+            console.log(error)
             setLoading(false);
             if (error.response.status < 500) {
                 return setError(error.response.data.message)

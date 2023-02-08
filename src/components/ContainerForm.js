@@ -76,7 +76,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                 />
                 <span className="font-poppins text-text_color font-light text-sm">Seu contato é relacionado a:</span>
                 <select
-                    value={select}
+                    value={select.id}
                     onChange={(e) => handleChangeSelect(e)}
                     onClick={activeAnimation}
                     onBlur={disableRotation}
