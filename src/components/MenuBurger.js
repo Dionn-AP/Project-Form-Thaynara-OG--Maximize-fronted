@@ -37,7 +37,7 @@ export function MenuBurger() {
                     <li><a href="/">Contato</a></li>
                 </ul>
                 <ul className="flex flex-col h-[30%] w-full items-center justify-end font-medium">
-                    <li className="mb-2"><a href="#">Imprensa</a></li>
+                    <li className="mb-2"><a href="/">Imprensa</a></li>
                     <li><a href="/">Fã-Clubes</a></li>
                     <Link to="/signin" className="font-semibold text-xl text-button_and_icons mt-8">Área restrita</Link>
                 </ul>

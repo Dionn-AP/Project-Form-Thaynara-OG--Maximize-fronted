@@ -24,6 +24,7 @@ export function Header({ title }) {
     useEffect(() => {
         // eslint-disable-next-line
         getUser();
+        // eslint-disable-next-line
     }, [])
 
     return (
