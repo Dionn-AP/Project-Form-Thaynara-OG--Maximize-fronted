@@ -7,12 +7,17 @@ module.exports = {
         background: '#FFFFFF',
         button_and_icons: '#FF8585',
         border_focused_inputs: '#FFDADA',
+        background_menu_burger: 'rgba(255, 255, 255, 0.85)',
+        background_inbox: 'rgba(255, 218, 218, 0.4)',
         button_not_robot: '#F5F5F5',
         text_color: '#333333',
         text_color_footer: '#BDBDBD',
         placeholder_color: '#666666',
         border_inputs: '#C4C4C4',
         color_black_default: '#000000'
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
     keyframes: {
@@ -34,7 +39,7 @@ module.exports = {
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif']
-    }
+    },
   },
   plugins: [],
 }
