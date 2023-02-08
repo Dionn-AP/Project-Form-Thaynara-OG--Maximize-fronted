@@ -13,7 +13,7 @@
 
 ## 🎨 Layout
 
-O layout da aplicação <a href="https://cubos.academy/"><img alt="Feito pela Rocketseat" src="https://img.shields.io/badge/feito%20pela-Cubos Academy-%23e5007b">O layout da aplicação <a href="https://cubos.academy/"><img alt="Feito pela Rocketseat" src="https://img.shields.io/badge/feito%20pela-Cubos Academy-%23e5007b">
+O layout da aplicação <a href="https://maximize.com.br/"><img alt="Feito pela Maximize SLZ" src="https://img.shields.io/badge/feito%20pela-Maximize-%23e5007b">
   </a>
 
 ### Algumas telas da aplicação
