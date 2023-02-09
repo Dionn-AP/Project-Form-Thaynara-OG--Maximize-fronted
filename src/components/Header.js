@@ -8,13 +8,14 @@ export function Header({ title }) {
     const navigate = useNavigate();
     const token = getItem('token');
     // eslint-disable-next-line
-    const [user, setUser] = useState([]);
+    const [user, setUser] = useState("");
     const [open, setOpen] = useState(false);
 
     async function getUser() {
         try {
             const response = await api.get('/user', getHeaders(token));
-            setUser(response.data);
+            setUser(nameInitial(response.data.name));
+
         } catch (error) {
             return
         }
@@ -32,7 +33,7 @@ export function Header({ title }) {
             <div
                 onClick={() => setOpen(!open)}
                 className="flex relative z-10 items-center justify-center max-sm:h-9 max-sm:w-9 h-11 w-11 outline-none bg-button_and_icons rounded-full shadow-lg shadow-button_and_icons/50 cursor-pointer">
-                <span className="font-semibold text-2xl text-background">{nameInitial(user.name)}</span>
+                <span className="font-semibold text-2xl text-background">{user ? user : ""}</span>
                 <div
                     onClick={() => navigate("/signin")}
                     className={clsx('flex absolute items-center justify-center rounded-full opacity-0 max-sm:h-9 max-sm:w-9 h-11 w-11 bg-background shadow-lg shadow-button_and_icons/50 cursor-pointer', {
