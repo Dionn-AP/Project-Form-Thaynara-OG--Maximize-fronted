@@ -83,9 +83,7 @@ export function Message({ setOpenMessage, currentMessage, listAllMessages }) {
                             alt="botão de fechar"
                         />
                     }
-                    <form
-                        onSubmit={sendMessage} className="flex relative flex-col w-full h-full overflow-y-hidden bg-background">
-
+                    <form onSubmit={sendMessage} className="flex relative flex-col w-full h-full overflow-y-hidden bg-background">
                         {
                             errorOrSuccess &&
                             <div className='flex w-full h-auto items-center justify-center absolute bottom-14 z-30'>

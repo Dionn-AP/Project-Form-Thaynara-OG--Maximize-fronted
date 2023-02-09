@@ -46,7 +46,6 @@ export function SignIn() {
             }
 
         } catch (error) {
-            console.log(error)
             setLoading(false);
             if (error.response.status < 500) {
                 return setError(error.response.data.message)

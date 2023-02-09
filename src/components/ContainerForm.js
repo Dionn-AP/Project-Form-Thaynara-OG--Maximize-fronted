@@ -54,7 +54,6 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
             }, 5000);
         } catch (error) {
             setLoading(false);
-            console.log(error.message)
             return
         }
     }
