@@ -19,7 +19,7 @@ O layout da aplicação <a href="https://maximize.com.br/"><img alt="Feito pela 
 ### Algumas telas da aplicação
     
 ### Contato - web
-Aqui você pode enviar um email através do formulário à direita da página.
+Aqui você pode enviar um email através do formulário à direita da página. O remetente receberá um email de confimação de que sua mensagem foi enviada.
     
 ![](https://i.imgur.com/vq94v2x.png)
 
@@ -35,7 +35,7 @@ Nessa tela somente o administrador poderá realizar login na aplicação.
 ![](https://i.imgur.com/2kY2taM.png)
     
 #### Inbox - web
-Essa é a tela onde é possível ver a caixa de mensagens e abrir uma mesagem recebida para visualizar o conteudo completo e ou responder.    
+Essa é a tela onde é possível ver a caixa de mensagens e abrir uma mesagem recebida para visualizar o conteudo completo e ou responder.   
 ![](https://i.imgur.com/geeTVvU.png)
 
 
@@ -44,10 +44,10 @@ Essa é a tela onde é possível ver a caixa de mensagens e abrir uma mesagem re
     
 ![](https://i.imgur.com/JBvIpDb.png) 
     
-[Mensagem aberta]   
+[Mensagem aberta] - Você visualiza o conteúdo completo da mensagem.  
 ![](https://i.imgur.com/LU00S4p.png)
     
-[Respondendo mensagem]    
+[Respondendo mensagem] - Você pode responderao remetente. 
 ![](https://i.imgur.com/D2OpBii.png)
 
     
