@@ -74,7 +74,7 @@ export function SignIn() {
                 <div className='flex flex-col w-full h-auto items-center'>
                     <form
                         onSubmit={Login}
-                        className='flex flex-col w-full max-sm:w-full max-[1940px]:w-[28rem] h-auto items-center justify-center max-[540px]:px-4 max-sm:px-14 px-8 mb-4 mt-8'>
+                        className='flex flex-col w-[40rem] max-sm:w-full max-[1940px]:w-[28rem] h-auto items-center justify-center max-[540px]:px-4 max-sm:px-14 px-8 mb-4 mt-8'>
                         <div className='flex flex-col w-full h-11 mb-4'>
                             <input
                                 type="text"
