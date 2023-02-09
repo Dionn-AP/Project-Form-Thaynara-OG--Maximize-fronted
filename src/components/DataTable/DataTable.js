@@ -17,7 +17,7 @@ export function DataTable({ openMessage, setOpenMessage }) {
                 })
 
         } catch (error) {
-            console.log(error.message)
+            return
         }
     }
 
@@ -29,7 +29,7 @@ export function DataTable({ openMessage, setOpenMessage }) {
             await api.patch(`/messageread/${message.id}`, {}, getHeaders(token));
 
         } catch (error) {
-            console.log(error.message)
+            return
         }
     }
 

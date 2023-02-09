@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import IconSend from '../assets/icon-enviar.svg';
 import IconArrowDown from '../assets/icon-arrow-down.svg';
+import { ThreeDots } from 'react-loading-icons';
 import { dataOptions } from '../utils/data';
 import api from '../services/api';
 import clsx from 'clsx';
@@ -12,6 +13,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
     const [inputPhone, setInputPhone] = useState("");
     const [inputMessage, setInputMessage] = useState("");
     const [errorGeneral, setErrorGeneral] = useState("");
+    const [loading, setLoading] = useState(false);
     const [select, setSelect] = useState({ id: '', name: '' });
     const [rotate, setRotate] = useState(false);
 
@@ -28,18 +30,29 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
         }
 
         try {
+            setLoading(true);
             // eslint-disable-next-line
             const response = await api.post('/sendmail', {
                 sender_name: inputName,
                 company: inputCompany,
                 email: inputEmail,
                 phone: inputPhone,
-                contact_reference: select.name,
+                contact_reference: select.name ? select.name : "imprensa",
                 sender_message: inputMessage,
                 message_read: false
             });
-
+            setInputName("");
+            setInputCompany("");
+            setInputEmail("");
+            setInputPhone("");
+            setInputMessage("");
+            setLoading(false);
+            setErrorGeneral(response.data.message);
+            setTimeout(() => {
+                setErrorGeneral("")
+            }, 5000);
         } catch (error) {
+            setLoading(false);
             console.log(error.message)
             return
         }
@@ -78,6 +91,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                 <select
                     value={select.id}
                     onChange={(e) => handleChangeSelect(e)}
+                    defaultValue="Imprensa"
                     onClick={activeAnimation}
                     onBlur={disableRotation}
                     className="-moz-appearance-none appearance-none focus:outline-none border border-border_inputs focus:border-1 focus:border-border_focused_inputs w-full cursor-pointer rounded font-poppins text-text_color font-normal text-sm py-2 px-3">
@@ -95,7 +109,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                     }
                 </select>
             </div>
-            <form onSubmit={handleSubmit} className="max-sm:w-full max-md:w-[90%] flex flex-col w-full max-md:h-[90%] h-auto">
+            <form onBlur={() => setErrorGeneral("")} onSubmit={handleSubmit} className="max-sm:w-full max-md:w-[90%] flex flex-col w-full max-md:h-[90%] h-auto">
                 <input
                     type="text"
                     className="appearance-none font-poppins font-light text-sm h-10 max-md:mb-3 mb-4 focus:rounded focus:outline-none border-2 border-transparent focus:border-2 focus:border-border_focused_inputs placeholder:opacity-90 placeholder:text-text_color placeholder:pb-0 border-b border-b-border_inputs px-2"
@@ -138,10 +152,21 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                         cols="50"
                     />
                     {
-                        errorGeneral &&
-                        <div className='flex w-full h-auto items-center justify-center absolute -bottom-3'>
-                            <span className='absolute text-xs font-light text-red-500'>{errorGeneral}</span>
-                        </div>
+                        loading ?
+                            <div className='flex w-full h-auto items-center justify-center absolute -bottom-8'>
+                                <ThreeDots
+                                    fill='#FF8585'
+                                    width={"3em"}
+                                />
+                            </div>
+                            :
+                            errorGeneral &&
+                            <div className='flex w-full h-auto items-center justify-center absolute -bottom-3'>
+
+                                <span className={clsx('absolute text-xs font-light text-red-500', {
+                                    "text-green-600": errorGeneral.includes("sucesso")
+                                })}>{errorGeneral}</span>
+                            </div>
                     }
                 </div>
                 <div className="flex w-full h-auto flex-row items-center justify-between">
