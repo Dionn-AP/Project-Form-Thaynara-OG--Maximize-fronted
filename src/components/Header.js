@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getItem, getHeaders, nameInitial } from '../utils/functions';
+import { getItem, getHeaders, nameInitial, clear } from '../utils/functions';
 import clsx from 'clsx';
 import api from '../services/api';
 
@@ -10,6 +10,11 @@ export function Header({ title }) {
     // eslint-disable-next-line
     const [user, setUser] = useState("");
     const [open, setOpen] = useState(false);
+
+    function exitInbox(){
+        clear()
+        navigate("/signin");
+    }
 
     async function getUser() {
         try {
@@ -35,7 +40,7 @@ export function Header({ title }) {
                 className="flex relative z-10 items-center justify-center max-sm:h-9 max-sm:w-9 h-11 w-11 outline-none bg-button_and_icons rounded-full shadow-lg shadow-button_and_icons/50 cursor-pointer">
                 <span className="font-semibold text-2xl text-background">{user ? user : ""}</span>
                 <div
-                    onClick={() => navigate("/signin")}
+                    onClick={() => exitInbox()}
                     className={clsx('flex absolute items-center justify-center rounded-full opacity-0 max-sm:h-9 max-sm:w-9 h-11 w-11 bg-background shadow-lg shadow-button_and_icons/50 cursor-pointer', {
                         "-translate-x-[3.5rem] z-30 opacity-100 duration-500 ease-in": open,
                         "translate-x-0 opacity-0 hidden duration-300 ease-out": !open
