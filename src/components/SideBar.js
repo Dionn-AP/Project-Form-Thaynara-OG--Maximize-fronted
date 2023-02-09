@@ -23,7 +23,7 @@ export function SideBar({ openMenu, setOpenMenu }) {
             </div>
             <nav className="flex flex-col h-[16rem] w-full items-end justify-between font-poppins font-light text-sm">
                 <ul className="flex flex-col h-[75%] w-full items-end justify-between mb-2">
-                    <li><a href="#=/">Sobre</a></li>
+                    <li><a href="/">Sobre</a></li>
                     <li><a href="/">Novidades</a></li>
                     <li><a href="/">Agenda</a></li>
                     <li><a href="/">Thay e Unicef</a></li>
