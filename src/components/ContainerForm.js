@@ -16,6 +16,7 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
     const [loading, setLoading] = useState(false);
     const [select, setSelect] = useState({ id: '', name: '' });
     const [rotate, setRotate] = useState(false);
+    const [checked, setChecked] = useState(false);
 
     function handleChangeSelect(e) {
         const myOption = dataOptions.find((item) => item.id === parseInt(e.target.value));
@@ -172,9 +173,17 @@ export function ContainerForm({ openMenu, setOpenMenu }) {
                 <div className="flex w-full h-auto flex-row items-center justify-between">
                     <button
                         type='button'
-                        className="flex flex-row font-poppins font-light text-xs bg-button_not_robot text-color_black_default rounded-md items-center justify-center h-10 px-1 w-2/5">Não sou um robô</button>
+                        className="flex flex-row relative font-poppins font-light text-right text-xs bg-button_not_robot text-color_black_default rounded-md items-center justify-center h-10 pl-1 w-2/5">
+                        <input
+                            type="checkbox"
+                            checked={checked}
+                            onClick={() => setChecked(!checked)}
+                            className='z-20 outline-none absolute left-3 h-3 w-3 rounded cursor-pointer bg-background border-2 border-text_color_footer' />
+                        Não sou um robô
+                    </button>
                     <button
                         type='submit'
+                        disabled={!checked}
                         className="flex flex-row relative font-poppins font-light text-sm bg-button_and_icons text-background rounded-md items-center justify-center h-10 w-2/5">Enviar
                         <img
                             className='absolute right-3 h-3.5'
