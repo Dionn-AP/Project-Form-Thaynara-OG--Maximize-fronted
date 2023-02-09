@@ -60,7 +60,7 @@ Eu fiz o deploy da aplicação em um servidor que conheci a pouco tempo, mas que
 
 ## Melhorias
 ### Editar dados do usuário
-Será possível editar o *nome, emmail e senha* do usuário.
+Será possível editar o *nome, email e senha* do usuário.
 
 ### Notificações
 Quando o usuário estiver logado e receber um email, uma notificação aparecerá no navegador.
