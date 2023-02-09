@@ -2,7 +2,10 @@
 
 ## 💻 Sobre o projeto
 
-🎓 Desafio (Thaynara OG - Challenge), proposto pela empresa Maximize para concorrência à vaga de estágio (Frontend). Trata-se de um formulário para que qualquer pessoa possa enviar uma mesagem com proposta de contato à pessoa fictícia em questão (Thaynara OG). Após enviar sua mensagem o destintário recebe um email de confirmação e saudação. Também conta com um serviço de CMS/Manager, onde a "Thanara OG" poderá acessar o sistema e visualizar na sua caixa de entrada dentro da própria aplicação, as mensagem recebidas, bem como respondê-las. Abaixo segue algumas funcionalidades da aplicação: 
+🎓 Desafio (Thaynara OG - Challenge), proposto pela empresa Maximize para concorrência à vaga de estágio (Frontend). Trata-se de um formulário para que qualquer pessoa possa enviar uma mesagem com proposta de contato à pessoa fictícia em questão (Thaynara OG). Após enviar sua mensagem o destintário recebe um email de confirmação e saudação. Também conta com um serviço de CMS/Manager, onde a "Thanara OG" poderá acessar o sistema e visualizar na sua caixa de entrada dentro da própria aplicação, as mensagem recebidas, bem como respondê-las. Abaixo segue algumas funcionalidades da aplicação:
+
+### **[Link da aplicação](https://contact-thayog.netlify.app/)**
+
 
 - Login de usuário (nessa etapa há apenas um usuário em questão, então trata-se de um login administrativo)
 - Usuário externo poderá enviar mensagens ao proprietário do site (pessoa fictícia em questão)
