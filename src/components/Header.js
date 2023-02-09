@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getItem, getHeaders } from '../utils/functions';
+import { getItem, getHeaders, nameInitial } from '../utils/functions';
 import clsx from 'clsx';
 import api from '../services/api';
 
@@ -14,8 +14,7 @@ export function Header({ title }) {
     async function getUser() {
         try {
             const response = await api.get('/user', getHeaders(token));
-            setUser(response.data)
-            console.log(...response.data)
+            setUser(response.data);
         } catch (error) {
             return
         }
@@ -32,8 +31,8 @@ export function Header({ title }) {
             <h1 className="text-2xl font-bold text-button_and_icons">{title}</h1>
             <div
                 onClick={() => setOpen(!open)}
-                className="flex relative z-20 items-center justify-center max-sm:h-9 max-sm:w-9 h-11 w-11 outline-none bg-button_and_icons rounded-full mr-3 shadow-lg shadow-button_and_icons/50 cursor-pointer">
-                <span className="font-semibold text-2xl text-background">T</span>
+                className="flex relative z-10 items-center justify-center max-sm:h-9 max-sm:w-9 h-11 w-11 outline-none bg-button_and_icons rounded-full shadow-lg shadow-button_and_icons/50 cursor-pointer">
+                <span className="font-semibold text-2xl text-background">{nameInitial(user.name)}</span>
                 <div
                     onClick={() => navigate("/signin")}
                     className={clsx('flex absolute items-center justify-center rounded-full opacity-0 max-sm:h-9 max-sm:w-9 h-11 w-11 bg-background shadow-lg shadow-button_and_icons/50 cursor-pointer', {
