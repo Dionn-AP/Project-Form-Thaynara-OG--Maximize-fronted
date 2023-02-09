@@ -1,4 +1,4 @@
-# Histórico do Desenvolvimento do Projeto (Front/Backend)
+# Histórico do Desenvolvimento do Projeto (Frontend/Backend)
 
 
 ## **Frontend**
@@ -70,6 +70,9 @@ Melhorar o estilo de exibição das mensagens de erro e sucesso e carregamento d
 
 ### Design de telas
 Recriar o *design* das páginas de **login** e **inbox**.
+
+### Template Engine
+Personalizar o *estilo* dos email de confirmação de envio de mensagem e de resposta.
 
 ---
 ## **Fim...** 
