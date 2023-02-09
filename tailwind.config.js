@@ -14,6 +14,7 @@ module.exports = {
         text_color_footer: '#BDBDBD',
         placeholder_color: '#666666',
         border_inputs: '#C4C4C4',
+        background_modal: 'rgba(0, 0, 0, 0.4)',
         color_black_default: '#000000'
       },
       backgroundImage: {
